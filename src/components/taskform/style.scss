@@ -1,0 +1,44 @@
+@import '../../style/theme.scss';
+
+.task-form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 90%;
+  max-width: 300px;
+  min-height: 200px;
+  max-height: 400px;
+  padding: 30px 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 0.225s ease-in-out;
+  background-color: $color-background-main;
+  border-radius: 4px;
+  box-shadow: $box-shadow-elevation24;
+  z-index: $z-index-modal;
+
+  &.active {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  .textfield-area {
+    margin-top: 15px;
+    flex-grow: 1;
+  }
+
+  .textfield-select {
+    margin-top: 15px;
+  }
+
+  .task-form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+
+    button {
+      width: 120px;
+    }
+  }
+}

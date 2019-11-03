@@ -1,0 +1,69 @@
+{
+  "name": "ciklum-internship-todo-list",
+  "version": "0.1.0",
+  "description": "ciklum-internship todo-list app",
+  "author": "Aleksandr Myronov prog3mail@gmail.com",
+  "license": "MIT",
+  "homepage": "https://prog83.github.io/ciklum-internship/",
+  "private": true,
+  "main": "src/app/index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --mode=development",
+    "build": "webpack --mode=production",
+    "start": "node server.js",
+    "lint": "eslint ./src",
+    "lint:fix": "eslint ./src --fix --color",
+    "generate-data-db": "node ./etc/generate-data-db/index.js",
+    "analyze": "cross-env ANALYZE=true next build"
+  },
+  "dependencies": {
+    "core-js": "^3.3.4",
+    "dexie": "^2.0.4",
+    "regenerator-runtime": "^0.13.3",
+    "uuid": "^3.3.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-proposal-private-methods": "^7.6.0",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/register": "^7.6.2",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.2.0",
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.4.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-prettier": "^3.1.1",
+    "express": "^4.17.1",
+    "faker": "^4.1.0",
+    "html-webpack-plugin": "^3.2.0",
+    "husky": "^3.0.9",
+    "lint-staged": "^9.4.2",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.13.0",
+    "prettier": "^1.18.2",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.9.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prog83/ciklum-internship.git"
+  },
+  "bugs": {
+    "url": "https://github.com/prog83/ciklum-internship/issues"
+  },
+  "keywords": [
+    "Javascipt",
+    "Ciklum",
+    "internship",
+    "task",
+    "todolist"
+  ]
+}

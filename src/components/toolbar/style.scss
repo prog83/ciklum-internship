@@ -1,0 +1,79 @@
+@import '../../style/theme.scss';
+
+.toolbar {
+  // display: flex;
+  // justify-content: center;
+
+  .textfield.filterTitle {
+    max-width: 300px;
+    min-width: 200px;
+
+    input {
+      padding-left: 40px;
+    }
+
+    label {
+      padding-left: 39px;
+    }
+
+    .material-icons {
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      transform: translateY(-50%);
+      color: $color-text-secondary;
+      pointer-events: none;
+    }
+  }
+
+  .toolbar-row {
+    display: flex;
+  }
+
+  .textfield-select.filterStatus {
+    max-width: 100px;
+    margin-left: 15px;
+  }
+
+  .textfield-select.filterPriority {
+    max-width: 100px;
+    margin-left: 15px;
+  }
+
+  #buttonCreate {
+    max-width: 100px;
+    height: 40px;
+    margin-left: 15px;
+  }
+}
+
+@media (min-width: 700px) {
+  .toolbar {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 699px) {
+  .textfield.filterTitle {
+    margin: 0 auto;
+  }
+
+  .toolbar-row {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 300px;
+  }
+  .toolbar .textfield-select.filterStatus,
+  .textfield-select.filterPriority,
+  #buttonCreate {
+    margin: 15px 0 0;
+  }
+
+  // .textfield-select.filterStatus, {
+  //   // display: block;
+  //   margin: 15px 0 0;
+  // }
+}

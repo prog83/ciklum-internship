@@ -1,0 +1,39 @@
+$color-background-main: #fff;
+$color-error: #f44336;
+
+$color-primary-light: #7793a1;
+$color-primary-main: #4a6572;
+$color-primary-dark: #203b47;
+
+$color-secondary-light: #ffdc65;
+$color-secondary-main: #f9aa33;
+$color-secondary-dark: #c17b00;
+
+$color-text-white: #fff;
+$color-text-primary: rgba(0, 0, 0, 0.87);
+$color-text-secondary: rgba(0, 0, 0, 0.54);
+
+$font-size-xs: 12px;
+$font-size-s: 14px;
+$font-size-m: 16px;
+
+$font-weight-regular: 400;
+$font-weight-bold: 700;
+
+$z-index-overlay-backdrop: 1100;
+$z-index-bar: 1200;
+$z-index-overlay: 1250;
+$z-index-modal: 1300;
+$z-index-menu: 1300;
+
+$box-shadow-elevation1: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+  0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+$box-shadow-elevation3: 0px 3px 3px -2px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14),
+  0px 1px 8px 0px rgba(0, 0, 0, 0.12);
+
+$box-shadow-elevation4: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14),
+  0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+
+$box-shadow-elevation24: 0px 11px 15px -7px rgba(0, 0, 0, 0.2),
+  0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12);

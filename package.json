@@ -52,6 +52,17 @@
     "webpack-cli": "^3.3.9",
     "webpack-dev-server": "^3.9.0"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "npm run lint:fix",
+      "git add ."
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/prog83/ciklum-internship.git"

@@ -22,13 +22,13 @@
 
       .label-text {
         color: $color-primary-light;
-        transform: translateY(-16px);
+        transform: translateY(-18px);
       }
     }
 
     &:valid + label {
       .label-text {
-        transform: translateY(-16px);
+        transform: translateY(-18px);
       }
     }
   }

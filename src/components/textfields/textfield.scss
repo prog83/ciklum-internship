@@ -17,6 +17,7 @@
     font-size: $font-size-s;
     border: 0;
     outline: 0;
+    box-shadow: 0px 0px 0px 0px;
 
     &:focus + label {
       border: 2px solid $color-primary-light;

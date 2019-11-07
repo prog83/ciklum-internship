@@ -4,7 +4,7 @@ const initialState = {
   filterTitle: '',
   filterStatus: 'all',
   filterPriority: 'all',
-  tasks: []
+  tasks: [],
 };
 
 // CONSTANTS
@@ -15,56 +15,56 @@ const Constants = {
   SET_FILTER_PRIORITY: 'SET_FILTER_PRIORITY',
   CREATE_TASK: 'CREATE_TASK',
   UPDATE_TASK: 'UPDATE_TASK',
-  DELETE_TASK: 'DELETE_TASK'
+  DELETE_TASK: 'DELETE_TASK',
 };
 
 // ACTIONS
 export function loadTasksFromStorage(value) {
   return {
     type: Constants.LOAD_TASKS_FROM_STORAGE,
-    payload: value
+    payload: value,
   };
 }
 
 export function setFilterTitle(value) {
   return {
     type: Constants.SET_FILTER_TITLE,
-    payload: value
+    payload: value,
   };
 }
 
 export function setFilterStatus(value) {
   return {
     type: Constants.SET_FILTER_STATUS,
-    payload: value
+    payload: value,
   };
 }
 
 export function setFilterPriority(value) {
   return {
     type: Constants.SET_FILTER_PRIORITY,
-    payload: value
+    payload: value,
   };
 }
 
 export function createTask(value) {
   return {
     type: Constants.CREATE_TASK,
-    payload: value
+    payload: value,
   };
 }
 
 export function updateTask(value) {
   return {
     type: Constants.UPDATE_TASK,
-    payload: value
+    payload: value,
   };
 }
 
 export function deleteTask(value) {
   return {
     type: Constants.DELETE_TASK,
-    payload: value
+    payload: value,
   };
 }
 
@@ -75,20 +75,20 @@ function insertItem(array, value) {
 }
 
 function updateItem(array, value) {
-  return array.map(item => {
+  return array.map((item) => {
     if (item.id !== value.id) {
       return item;
     }
 
     return {
       ...item,
-      ...value
+      ...value,
     };
   });
 }
 
 function deleteItem(array, value) {
-  return array.filter(item => item.id !== value);
+  return array.filter((item) => item.id !== value);
 }
 
 // REDUCER

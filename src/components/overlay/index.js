@@ -13,15 +13,16 @@ export function openOverlay(variant) {
 }
 
 export function addClickListenerOverlay(cb) {
-  if (typeof cb === 'function')
+  if (typeof cb === 'function') {
     overlay.addEventListener(
       'click',
-      event => {
+      (event) => {
         cb(event);
         closeOverlay();
       },
-      { once: true }
+      { once: true },
     );
+  }
 }
 
 export function dispatchClickOverlay(detail) {

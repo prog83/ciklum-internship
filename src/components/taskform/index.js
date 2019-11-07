@@ -51,7 +51,7 @@ function initializeToCreate() {
   // Check temp data from storage
   const tempData = getTempDataFromStorage();
 
-  fieldsTaskForm.forEach(field => {
+  fieldsTaskForm.forEach((field) => {
     const element = field;
 
     switch (element.name) {
@@ -73,11 +73,12 @@ function initializeToCreate() {
 // Fill form
 function initializeToEdit(id) {
   const taskItem = getTaskById(id);
-  if (taskItem)
-    fieldsTaskForm.forEach(field => {
+  if (taskItem) {
+    fieldsTaskForm.forEach((field) => {
       const element = field;
       element.value = taskItem[field.name] || '';
     });
+  }
 }
 
 export function openTaskForm(id) {
@@ -103,7 +104,7 @@ function handleCloseTaskForm() {
 function validateForm() {
   let valid = true;
 
-  fieldsTaskForm.forEach(field => {
+  fieldsTaskForm.forEach((field) => {
     const { name, value = '' } = field;
     const label = field.closest('div[class^=textfield]');
 

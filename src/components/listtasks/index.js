@@ -18,7 +18,9 @@ function filterBySelect(value, filterValue) {
 }
 
 function ListTasks() {
-  const { tasks, filterTitle = '', filterStatus = 'all', filterPriority = 'all' } = store.state;
+  const {
+    tasks, filterTitle = '', filterStatus = 'all', filterPriority = 'all',
+  } = store.state;
 
   // Remove all CardTask
   clearTasksContainer();
@@ -26,12 +28,11 @@ function ListTasks() {
   // Refresh with filter
   tasks
     .filter(
-      task =>
-        filterByInput(task.title, filterTitle) &&
-        filterBySelect(task.status, filterStatus) &&
-        filterBySelect(task.priority, filterPriority)
+      (task) => filterByInput(task.title, filterTitle)
+        && filterBySelect(task.status, filterStatus)
+        && filterBySelect(task.priority, filterPriority),
     )
-    .forEach(element => {
+    .forEach((element) => {
       tasksContainer.appendChild(TaskCard(element));
     });
 }

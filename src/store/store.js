@@ -16,13 +16,13 @@ export default class Store {
 
   async dispatch(action) {
     this.#state = await this.#reducer(this.#state, action);
-    this.#callbacks.forEach(cb => cb());
+    this.#callbacks.forEach((cb) => cb());
   }
 
   subscribe(callback) {
     this.#callbacks.push(callback);
     return () => {
-      this.#callbacks = this.#callbacks.filter(cb => cb !== callback);
+      this.#callbacks = this.#callbacks.filter((cb) => cb !== callback);
     };
   }
 }

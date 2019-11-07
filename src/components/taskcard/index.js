@@ -2,7 +2,9 @@ import './style.scss';
 import ButtonMenu from '../ButtonMenu';
 
 export default function CardTask(props) {
-  const { id, title = '', description = '', status, priority } = props;
+  const {
+    id, title = '', description = '', status, priority,
+  } = props;
 
   const card = document.createElement('div');
   card.className = 'task-card';

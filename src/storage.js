@@ -21,9 +21,7 @@ export async function getTasksFromStorage() {
 
 export async function putTaskToStorage(item) {
   try {
-    return await storage.transaction('rw', storage.tasks, () =>
-      storage.tasks.put({ ...item, modify: Date.now() })
-    );
+    return await storage.transaction('rw', storage.tasks, () => storage.tasks.put({ ...item, modify: Date.now() }));
   } catch (error) {
     throw new Error(error);
   }

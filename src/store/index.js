@@ -8,7 +8,7 @@ appStore.dispatch({ type: 'INIT' });
 export function getTaskById(id) {
   const { tasks } = appStore.state;
   let rslt = null;
-  tasks.some(item => {
+  tasks.some((item) => {
     if (item.id === id) {
       rslt = { ...item };
       return true;

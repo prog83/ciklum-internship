@@ -1,10 +1,10 @@
 {
-  "name": "ciklum-internship-todo-list",
+  "name": "todo-list",
   "version": "0.1.0",
-  "description": "ciklum-internship todo-list app",
+  "description": "todo-list app",
   "author": "Aleksandr Myronov prog3mail@gmail.com",
   "license": "MIT",
-  "homepage": "https://prog83.github.io/ciklum-internship/",
+  "homepage": "https://prog83.github.io/todo-list/",
   "private": true,
   "main": "src/app/index.js",
   "scripts": {
@@ -13,8 +13,7 @@
     "start": "node server.js",
     "lint": "eslint ./src",
     "lint:fix": "eslint ./src --fix --color",
-    "generate-data-db": "node ./etc/generate-data-db/index.js",
-    "analyze": "cross-env ANALYZE=true next build"
+    "generate-data-db": "node ./etc/generate-data-db/index.js"
   },
   "dependencies": {
     "core-js": "^3.3.4",
@@ -62,16 +61,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/prog83/ciklum-internship.git"
+    "url": "git+https://github.com/prog83/todo-list.git"
   },
   "bugs": {
-    "url": "https://github.com/prog83/ciklum-internship/issues"
+    "url": "https://github.com/prog83/todo-list/issues"
   },
   "keywords": [
     "Javascipt",
-    "Ciklum",
-    "internship",
-    "task",
     "todolist"
   ]
 }
